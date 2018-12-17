@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+}
+/********************
+CONTAINER
+***********************/
+
+.container {
+	padding: 0 1em;
+}
+
+/********************
+HEADER
+***********************/
+ 
+body {
+	margin: 0;
+	background-color: #f2f2f2;
+}
+
+header {
+	text-align: center;
+	line-height: 1.3;
+	font-size: 1.2em;
+	/*color: #828282;*/
+	
+}
+
+header h1 {
+	color: #E8BE27;
+}
+
+
+/********************
+HeaderProfile
+***********************/
+
+.headerprofile  {
+	text-align: center;
+}
+
+
+/********************
+NAV
+***********************/
+
+ul.main-nav {
+	display: flex;
+	flex-direction: column;
+}
+
+ul.main-nav {
+	margin: 0;
+	padding: 0;
+}
+.main-nav li {
+	margin: .4em 0;
+	background-color: #fff;
+	list-style: none;
+}
+
+.main-nav li  a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	padding: .5em;	
+}
+
+li a {
+	color: #000;
+	text-decoration: none;
+	
+}
+
+	.main-nav a:hover, .footer-nav a:hover {
+		background-color: #000;
+		color: #fff;
+	}
+	
+	
+/********************
+MAIN
+***********************/
+main {
+	padding: 1em 0;
+	text-align: center;
+	background-color: #E7F9FB;
+
+}
+
+main h1 {
+	padding: 1em 0;
+	color: #2b2b2b;
+}
+main img {
+	max-width: 100%;
+}
+
+main p {
+	line-height: 1.3;
+	font-size: 1.2em;
+	color: #828282;
+}
+
+
+/********************
+Portfolio 
+***********************/
+
+.portfolio-cards {
+	margin: 0;
+	padding: 0;
+}
+
+#portfolio li {
+	list-style: none;
+	margin: 1em;
+	
+}
+
+/********************
+FOOTER
+***********************/
+
+footer {
+background-color: #f2f2f2;
+text-align: center;
+padding: 1em 0;
+}
+
+.footer-menu {
+	display: flex;
+	
+}
+
+#contact {
+	padding: 1em 0;
+}
+.stuname {
+
+	display: flex;
+	margin-right: auto;
+}
+
+.footer-nav {
+	padding: 0;
+	display: flex;
+	font-weight: bold;
+	color: #000;
+	justify-content: space-around;
+}
+
+.footer-nav a {
+	padding: .2em .5em;
+}
+
+.footer-nav li {
+	list-style: none;
+	font-size: 1.2em;
+}
+
+.footer-nav li:nth-last-child(-n+3) {
+	display: none;
+	
+
+}
+
+/********************
+MEDIA QUERIES
+***********************/
+
+
+@media screen and (min-width: 768px) {
+	
+ul.main-nav {
+flex-direction: row;
+}	
+
+.container {
+	width: 98%;
+	margin: 0 auto;
+}
+
+.top {
+	display: none;
+}
+	
+	.main-nav {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+.footer-nav {
+	display: flex;
+}
+	
+.footer-nav li:nth-last-child(-n+3) {
+	display: inherit;
+	margin: 0 1em;
+}
+	
+.name {
+	display: flex;
+	flex-direction: column;
+}
+	
+	.main-nav li {
+		margin: 0 .5em;
+		
+		background-color: #f2f2f2;
+	}
+	
+
+	
+	.headerprofile {
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 1em 0;
+	}
+	
+	.headerprofile .container {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	
+	.headerprofile p {
+		margin-right: 1em;
+	}
+	
+	
+	.portfolio-cards {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.portfolio-cards li {
+	
+			width: 45%;
+			
+	}
+	
+	
+}
+
+
+@media screen and (min-width: 1024px) {
+	
+		.portfolio-cards li {
+			width: 30%;
+			
+	}
+	
+	header .container {
+		display: flex;
+	
+	}
+	
+	.name {
+		flex-direction: row;
+		margin-right: auto;
+	}
+	
+
+.main-nav li {
+	padding: 1em 0;
+}
+
+}
